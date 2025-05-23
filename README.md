@@ -5,29 +5,16 @@
 This Streamlit app helps evaluate the ethical implications of data and AI use cases using a rubric based on the "Do No Harm" framework.
 
 ## Features
-- Input a use case and system response
-- Score response across five ethical dimensions:
-  - Justice & Equity
-  - Transparency & Trust
-  - Accountability
-  - Respect for Persons
-  - Non-Maleficence
-- Provide justification for each score
-- Visualize results using an ethical yardstick (color-coded bar chart)
-- Save and review historical evaluations
+- Evaluate use cases against ethical principles
+- Scoring via a rubric grounded in data governance ethics
+- Branded visualization with pencil-style yardstick image
+- Created by April C. Williams, the Ethical Data Doc
 
-## How to Use
+## Usage
 
-1. Clone the repo or download ZIP
-2. Install requirements:
-    ```bash
-    pip install streamlit pandas matplotlib
-    ```
-3. Run the app:
-    ```bash
-    streamlit run app.py
-    ```
-
----
-
-Created by April C. Williams, the Ethical Data Doc
+1. Clone or download this repo
+2. Run:
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
