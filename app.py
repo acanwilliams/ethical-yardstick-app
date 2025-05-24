@@ -7,6 +7,10 @@ import pandas as pd
 from PIL import Image
 
 st.set_page_config(page_title="Ethical Yardstick", layout="centered")
+
+# Display the branded yardstick image at the top
+st.image("ethical_yardstick_preview.png", use_container_width=True)
+
 st.title("🧭 Ethical Yardstick")
 st.subheader("by April C. Williams — The Ethical Data Doc")
 
@@ -81,6 +85,7 @@ if data["entries"]:
     result = interpret_score(avg_score)
     st.markdown(f"**Overall Score:** {avg_score:.2f} — {result}")
 
-    st.image("ethical_yardstick_preview.png", use_column_width=True)
+    # Display yardstick image again for visual representation
+    st.image("ethical_yardstick_preview.png", use_container_width=True)
 else:
     st.info("No evaluations submitted yet.")
